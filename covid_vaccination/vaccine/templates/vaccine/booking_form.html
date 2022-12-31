@@ -1,0 +1,22 @@
+{% extends "vaccine/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class='form-group'>
+                <legend class="border-bottom mb-4">Book your vaccine</legend>
+                <p>Time Format: YYYY-MM-DD HH:MM:SS +HH:MM(Timezone)</p>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-secondary" type="submit">Book now</button>
+            </div>
+        </form>
+    </div>
+
+{% endblock content %}
+
+<!--
+user is built into django to represent current logged in user
+-->

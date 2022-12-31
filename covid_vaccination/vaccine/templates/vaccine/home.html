@@ -1,0 +1,15 @@
+{% extends 'vaccine/base.html' %}
+{% block content %}
+    <div class="container border border-0">
+        <h1>Get Your Vaccination done today!!</h1>
+        {% for center in centers %}
+            <ul class="list-group border border-secondary m-2">
+                <li class="list-group-item">
+                    <h3 class="border-bottom mb-2">{{ center.name }}</h3>
+                    <p>{{ center.location }}, {{ center.state }}</p>
+                    <a href="#">Click here to get your vaccination shot now!</a>
+                </li>
+            </ul>
+        {% endfor %}
+    </div>
+{% endblock content %}
