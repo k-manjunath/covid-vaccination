@@ -12,3 +12,6 @@ To Access Admin: localhost:8000/admin
 Admin Credentials:
 mail: superuser@gmail.com
 pass: super
+
+Note:
+The search bar for vaccination centers wasn't developed due to time constraints
